@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+    body{
+        height:2000px;
+    }
+    .nav{
+        background-color:#cccccc;
+        width:800px;
+        margin:0 auto;
+    }
+    .nav li{
+       width:100px;
+       float:left;
+    }
+    .nav a{
+        display:block;
+        height:35px;
+        font-size:15px;
+        color:#026bde;
+        text-align:center;
+        line-height:35px;
+    }
+    .nav a:hover{
+        color:pink;
+        background-color:#75a5db;
+    }
+    .parent{
+        width:802px;
+        margin:0 auto;
+        border:1px #bcbcbc solid;
+    }
+    .left{
+        width:400px;
+        height:250px;
+        background-color:#66cbff;
+        float:left;
+    }
+    .right{
+        width:400px;
+        height:250px;
+        background-color:#cdcc00;
+        float:right;
+    }
+    .three{
+        width:802px;
+        margin:0 auto;
+        border:1px #bcbcbc solid;
+    }
+    .three .first{
+        width:299px;
+        height:182px;
+        background-color:#ff00ff;
+        float:left;
+    }
+    .three .second{
+        width:200px;
+        height:182px;
+        background-color:#9afe66;
+        float:left;
+    }
+    .three .third{
+        width:281px;
+        height:182px;
+        background-color:#ffff33;
+        float:left;
+    }
+    .three .add{
+        width:10px;
+        height:182px;
+        background-color:#9a99ff;
+        float:left;
+    }
+    .include{
+        width:800px;
+        height:162px;
+        background-color:#9966ff;
+        border:1px #b299c3 solid;
+        margin:0 auto;
+        position:relative;
+    }
+    .include p{
+        font-size:16px;
+        font-weight:bold;
+        position:absolute;
+        left:62px;
+        bottom:38px;
+    }
+    .include .menu{
+        background-color:#ff00ff;
+        width:600px;
+        margin:0 auto;
+        position:absolute;
+        right:0;
+        bottom:0;
+    }
+    .menu li{
+        width:100px;
+        float:left;
+    }
+    .menu a{
+        display:block;
+        height:40px;
+        color:#6483dd;
+        font-size:13px;
+        text-align: center;
+        line-height:40px;
+       
+    }
+    .menu a:hover{
+        background-color:#c842c8;
+        color:#dbf02d;
+    }
+    .both{
+        width:400px;
+        height:200px;
+        border:1px #019934 solid;
+        margin:0 auto;
+        position:relative;
+    }
+    .both .up{
+        height:40px;
+        width:400px;
+        background-color:#00cccb;
+    }
+    .both .up li{
+        width:200px;
+        float:left;
+    }
+    .both .up a{
+        display: block;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+    }
+    .both .up a:hover{
+        background-color:#01ffcd;
+    }
+    .both .middle{
+        height:160px;
+        background-color:#01ffcd;
+    }
+    .both .down{
+        width:200px;
+        height:120px;
+        background-color:#014655;
+        position:absolute;
+        left:20px;
+        bottom:20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <ol class="nav clearfix">
+            <li><a href="#">公司首页</a></li>
+            <li><a href="#">产品介绍</a></li>
+            <li><a href="#">媒体介绍</a></li>
+            <li><a href="#">留言板</a></li>
+            <li><a href="#">最新动态</a></li>
+            <li><a href="#">名人名言</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ol>
+    </div>
+    <div class="parent clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="three clearfix">
+        <div class="first"></div>
+        <div class="add"></div>
+        <div class="second"></div>
+        <div class="add"></div>
+        <div class="third"></div>
+    </div>
+    <div class="include">
+        <p>logo</p>
+        <ol class="menu clearfix">
+            <li><a href="#">公司首页</a></li>
+            <li><a href="#">产品介绍</a></li>
+            <li><a href="#">媒体介绍</a></li>
+            <li><a href="#">最新动态</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ol>
+    </div>
+    <div class="both">
+        <ul class="up clearfix">
+            <li><a href="#">标题</a></li>
+            <li><a href="#">说明</a></li>
+        </ul>
+        <div class="middle"></div>
+        <div class="down"></div>
+    </div>
+</body>
+</html>
+
